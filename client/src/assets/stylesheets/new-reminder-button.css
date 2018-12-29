@@ -1,0 +1,23 @@
+.new-reminder-button-container {
+    width: 300px;
+    height: 60px;
+    border-radius: 10px;
+    background-color: #2ecc71;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.new-reminder-button-container h1 {
+    font-family: 'Staatliches', sans-serif;
+    color: #fff;
+    font-size: 20px;
+}
+
+.new-reminder-button-container:hover {
+    cursor: pointer;
+}
+
+.new-reminder-button-container:active {
+    box-shadow: inset 0 4px 8px rgba(0,0,0,.39), 0 -1px 1px #FFF, 0 1px 0 #FFF;
+}

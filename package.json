@@ -1,0 +1,26 @@
+{
+  "name": "autoreminder",
+  "version": "1.0.0",
+  "description": "A desktop reminder application built in JavaScript using Electron and Twilio to send reminders",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JesseDavda/AutoReminder.git"
+  },
+  "author": "Jesse Davda <jessedavda@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JesseDavda/AutoReminder/issues"
+  },
+  "homepage": "https://github.com/JesseDavda/AutoReminder#readme",
+  "dependencies": {
+    "koa": "^2.6.2"
+  },
+  "devDependencies": {
+    "electron": "^4.0.0"
+  }
+}

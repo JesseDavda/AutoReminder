@@ -1,0 +1,59 @@
+.reminder-modal-container {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.reminder-modal-body {
+    width: 700px;
+    height: 170px;
+    position: fixed;
+    background-color: #fff;
+    border-radius: 25px;
+    padding-left: 35px;
+    font-family: 'Staatliches', sans-serif;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.reminder-modal-body h2 {
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+.inputs-container {
+    display: flex;
+}
+
+.inputs-container p {
+    margin: 0;
+    margin-bottom: 5px;
+}
+
+.reminder-setup {
+    margin-right: 20px;
+}
+
+.reminder-setup input {
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid #33484D;
+    display: flex;
+    justify-content: center;
+    padding-left: 5px;
+}
+
+.reminder-setup input:focus {
+    outline: none;
+}
+
+.create-reminder-button {
+    
+}

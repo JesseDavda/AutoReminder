@@ -12,6 +12,7 @@
     font-family: 'Staatliches', sans-serif;
     color: #fff;
     font-size: 20px;
+    user-select: none;
 }
 
 .new-reminder-button-container:hover {

@@ -18,7 +18,8 @@
   },
   "homepage": "https://github.com/JesseDavda/AutoReminder#readme",
   "dependencies": {
-    "koa": "^2.6.2"
+    "koa": "^2.6.2",
+    "koa-router": "^7.4.0"
   },
   "devDependencies": {
     "electron": "^4.0.0"

@@ -21,13 +21,13 @@ export default class ReminderModal extends Component {
     }
 
     handleCreateClick() {
-        let postBody = {
-            reminder_name: this.reminder_name,
-            reminder_date: this.reminder_date,
-            reminder_time: this.reminder_time
+        const postBody = {
+            reminder_name: this.state.reminder_name,
+            reminder_date: this.state.reminder_date,
+            reminder_time: this.state.reminder_time
         }
 
-        axios.post('http://localhost:8000/newReminder', postBody)
+        axios.post('http://localhost:8000/createReminder', postBody)
             .then(res => {
                 console.log(res);
             })
@@ -36,21 +36,21 @@ export default class ReminderModal extends Component {
             });
     }
 
-    handleNameChange(data) {
+    handleNameChange(event) {
         this.setState({
-            reminder_name: data
+            reminder_name: event.target.value
         })
     }
 
-    handleDateChange(data) {
+    handleDateChange(event) {
         this.setState({
-            reminder_date: data
+            reminder_date: event.target.value 
         })
     }
 
-    handleTimeChange(data) {
+    handleTimeChange(event) {
         this.setState({
-            reminder_time: data
+            reminder_time: event.target.value 
         })
     }
 
@@ -62,17 +62,17 @@ export default class ReminderModal extends Component {
                     <div className="inputs-container">
                         <div className="reminder-setup input">
                             <label for="reminder_name"><p>Name:</p></label>
-                            <input type="text" onChange={handleNameChange}/>
+                            <input type="text" value={this.state.reminder_name} onChange={this.handleNameChange.bind(this)}/>
                         </div>
                         <div className="reminder-setup date">
                             <label for="reminder_date"><p>Date:</p></label>
-                            <input type="date"  onChange={handleDateChange}/>
+                            <input type="date" value={this.state.reminder_date} onChange={this.handleDateChange.bind(this)}/>
                         </div>
                         <div className="reminder-setup time">
                             <label for="reminder_time"><p>Time</p></label>
-                            <input type="time" onChange={handleTimeChange}/>
+                            <input type="time" value={this.state.reminder_time} onChange={this.handleTimeChange.bind(this)}/>
                         </div>
-                        <div className="create-reminder-button"><p>Create Reminder!</p></div>
+                        <div className="create-reminder-button" onClick={this.handleCreateClick.bind(this)}><p>Create Reminder!</p></div>
                     </div>
                 </div>
             </div>
